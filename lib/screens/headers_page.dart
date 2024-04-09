@@ -10,7 +10,8 @@ class HeadersPage extends StatelessWidget {
       body: SingleChildScrollView(
           child: Column(
         children: [
-          HeaderRectangular(),
+          // HeaderRectangular(),
+          HeaderBordesRedondeados(),
           Content(),
         ],
       )),
@@ -30,7 +31,10 @@ class Content extends StatelessWidget {
         children: [
           SizedBox(height: 20),
           Text(
-              'El CustomPainter en Flutter es una clase que te permite realizar dibujos personalizados en un lienzo (canvas) dentro de un widget. Esto te da un alto grado de control sobre cómo se renderizan los gráficos y la capacidad de crear representaciones visuales completamente personalizadas.')
+              'El CustomPainter en Flutter es una clase que te permite realizar dibujos personalizados en un lienzo (canvas) dentro de un widget. Esto te da un alto grado de control sobre cómo se renderizan los gráficos y la capacidad de crear representaciones visuales completamente personalizadas.'),
+          SizedBox(height: 10),
+          Text(
+              'Es importante saber que, color y decoration son mutuamente excluyentes. No puedes aplicar ambos al mismo tiempo en un Container. Si usas decoration, no necesitas usar color, ya que este puede ser definido como una caracteristica de decoration. ')
         ],
       ),
     );
