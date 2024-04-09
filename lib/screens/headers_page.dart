@@ -11,7 +11,8 @@ class HeadersPage extends StatelessWidget {
           child: Column(
         children: [
           // HeaderRectangular(),
-          HeaderBordesRedondeados(),
+          // HeaderBordesRedondeados(),
+          HeaderRectanguloInclinado(),
           Content(),
         ],
       )),
