@@ -7,16 +7,18 @@ class HeadersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      /*body: SingleChildScrollView(
-          child: Column(
-        children: [
-          // HeaderRectangular(),
-          // HeaderBordesRedondeados(),
-          HeaderRectanguloInclinado(),
-          Content(),
-        ],
-      ),);*/
-      body: HeaderTrianguloRectangulo(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            // HeaderRectangular(),
+            // HeaderBordesRedondeados(),
+            // HeaderRectanguloInclinado(),
+            HeaderRectanguloPico(),
+            Content(),
+          ],
+        ),
+      ),
+      //body: HeaderTrianguloRectangulo(),
     );
   }
 }
@@ -36,7 +38,10 @@ class Content extends StatelessWidget {
               'El CustomPainter en Flutter es una clase que te permite realizar dibujos personalizados en un lienzo (canvas) dentro de un widget. Esto te da un alto grado de control sobre cómo se renderizan los gráficos y la capacidad de crear representaciones visuales completamente personalizadas.'),
           SizedBox(height: 10),
           Text(
-              'Es importante saber que, color y decoration son mutuamente excluyentes. No puedes aplicar ambos al mismo tiempo en un Container. Si usas decoration, no necesitas usar color, ya que este puede ser definido como una caracteristica de decoration. ')
+              'Es importante saber que, color y decoration son mutuamente excluyentes. No puedes aplicar ambos al mismo tiempo en un Container. Si usas decoration, no necesitas usar color, ya que este puede ser definido como una caracteristica de decoration. '),
+          SizedBox(height: 10),
+          Text(
+              'Los .. es un operador en cascada usado en DART que permite encadenar varias operaciones en un solo objeto, lo que hace que el código sea más conciso y legible.'),
         ],
       ),
     );
