@@ -1,4 +1,5 @@
 // Archivo de barril concentrador de widgets
+export 'package:custom_painter_flutter_app/widgets/header_rectangulo_curvo.dart';
 export 'package:custom_painter_flutter_app/widgets/header_rectangulo_pico.dart';
 export 'package:custom_painter_flutter_app/widgets/header_triangulo_rectangulo.dart';
 export 'package:custom_painter_flutter_app/widgets/header_rectangulo_inclinado.dart';
