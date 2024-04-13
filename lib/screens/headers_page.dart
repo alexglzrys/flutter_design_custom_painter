@@ -7,7 +7,7 @@ class HeadersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SingleChildScrollView(
+      /*body: SingleChildScrollView(
           child: Column(
         children: [
           // HeaderRectangular(),
@@ -15,7 +15,8 @@ class HeadersPage extends StatelessWidget {
           HeaderRectanguloInclinado(),
           Content(),
         ],
-      )),
+      ),);*/
+      body: HeaderTrianguloRectangulo(),
     );
   }
 }
